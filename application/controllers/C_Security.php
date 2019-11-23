@@ -68,6 +68,5 @@ class C_Security extends CI_Controller
     $detail=$this->M_Security->detail(str_replace("_", " ", $patrol_date));
     echo json_encode($detail, JSON_PRETTY_PRINT);
   }
-  
 }
 ?>
