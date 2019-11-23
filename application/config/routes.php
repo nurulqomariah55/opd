@@ -54,6 +54,7 @@ $route['default_controller'] = 'Auth';
 $route['forget'] = 'auth/reset_password';
 $route['logout'] = 'auth/logout';
 $route['dashboard'] = 'C_User';
+$route['search']= 'C_Route/search';
 
 //MANAGE ROUTE
 $route['route/list'] = 'C_Route/add';

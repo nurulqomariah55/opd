@@ -29,6 +29,13 @@
   </div>
 </form>
 <br><br><br>
+<div class="col-4 offset-2">
+  <div class="form-group">
+    <div id="the-basics">
+      <input class="typeahead form-control" type="text" placeholder="Search route name">
+    </div>
+  </div>
+</div>
 </div>
 <div class="font-card">
 <br>
