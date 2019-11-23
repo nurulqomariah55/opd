@@ -80,5 +80,16 @@ $route['location/delete/(:any)'] = 'C_Location/delete/$1';
 $route['location/edit/(:any)'] = 'C_Location/edit/$1';
 $route['location/data'] = 'C_Location/dataLoc';
 
+// MANAGE SCHEDULE
+$route['schedule/list']='C_Schedule/add';
+$route['schedule/data/([A-Z])/(:any)'] = 'C_Schedule/dataSchedule/$1/$2';
+$route['schedule/delete/([A-Z])/(:any)']='C_Schedule/delete/$1/$2';
+$route['schedule/edit/([A-Z])/(:any)'] = 'C_Schedule/edit/$1/$2';
+
+// MANAGE EMPLOYEE
+$route['employee/list']= 'C_Employee/add';
+$route['employee/edit/(:any)']= 'C_Employee/edit/$1';
+$route['employee/delete/(:any)']= 'C_Employee/delete/$1';
+
 $route['404_override'] = 'C_Location/error';
 $route['translate_uri_dashes'] = FALSE;

@@ -133,4 +133,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 // */
 
-$autoload['model'] = array('M_Reset','M_Checkpoint','M_Location','M_Route');
+$autoload['model'] = array('M_Reset','M_Checkpoint','M_Location','M_Route','M_Schedule', 'M_Employee');
