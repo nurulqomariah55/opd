@@ -281,3 +281,4 @@ class C_User extends CI_Controller
     echo json_encode($this->M_Checkpoint->get_search_date($id_route));
   }     
 }
+?>
