@@ -55,7 +55,12 @@ $route['forget'] = 'auth/reset_password';
 $route['logout'] = 'auth/logout';
 $route['dashboard'] = 'C_User';
 
+//MANAGE ROUTE
+$route['route/list'] = 'C_Route/add';
+$route['route/delete/([A-Za-z])'] = 'C_Route/delete/$1';
+$route['route/edit/([A-Za-z])'] = 'C_Route/edit/$1';
 $route['route/search/([A-Za-z])'] = 'C_User/search/$1';
+
 
 // //MANAGE DATA PATROL
  $route['data/chart/?([A-Za-z])?/']= 'C_User/dataChart/$1/';
