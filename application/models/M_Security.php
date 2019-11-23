@@ -37,5 +37,13 @@ class M_Security extends CI_Model
 		$this->db->where('id_schedule', $id_schedule);
 		return $query =  $this->db->get()->result();
 	}
+	public function detail($patrol_date=FALSE)
+	{
+		$this->db->select('e.name, e.no_badge, patrol_date, id_route, id_schedule');
+		$this->db->from('employee e');
+		$this->db->join('security_patrol sp', 'e.no_badge=sp.no_badge');
+		$this->db->where('patrol_date', $patrol_date);
+		return $query =  $this->db->get()->result();
+	}
 }
 ?>

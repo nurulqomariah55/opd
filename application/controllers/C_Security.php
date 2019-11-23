@@ -64,6 +64,10 @@ class C_Security extends CI_Controller
     $this->load->view('security/V_Security', $data);
     $this->load->view('templates/footer', $data);
   }
+  public function detail($patrol_date=FALSE){
+    $detail=$this->M_Security->detail(str_replace("_", " ", $patrol_date));
+    echo json_encode($detail, JSON_PRETTY_PRINT);
+  }
   
 }
 ?>
