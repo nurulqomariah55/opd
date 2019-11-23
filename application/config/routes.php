@@ -91,5 +91,9 @@ $route['employee/list']= 'C_Employee/add';
 $route['employee/edit/(:any)']= 'C_Employee/edit/$1';
 $route['employee/delete/(:any)']= 'C_Employee/delete/$1';
 
+//MANAGE SECURITY
+$route['security'] = 'C_Security/add';
+$route['security/list'] = 'C_Security/list';
+
 $route['404_override'] = 'C_Location/error';
 $route['translate_uri_dashes'] = FALSE;
